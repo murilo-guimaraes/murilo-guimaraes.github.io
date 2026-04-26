@@ -62,7 +62,7 @@ Esta iteração consolida a robustez da manipulação de dados via DOM e a matur
 ---
 ### Estrutura de Arquivos
 
-```bash
+```
 ├── Colaboratory/           # Documentação técnica e notas de aula
 │   ├── Artigos/            # Notas e resumos em formato Markdown/Notebook
 │   └── Relatórios/         # Documentação de algoritmos e protocolos
