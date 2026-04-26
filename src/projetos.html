@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos & Pesquisas | Murilo</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="projetos.css">
+</head>
+<body class="dark-mode">
+    <div class="bg-blur"></div>
+
+    <div class="container">
+        <header class="header-free">
+            <h1 class="glitch-text">Projetos & Pesquisas</h1>
+            <p class="subtitle">Espaço dedicado ao registro da minha jornada acadêmica e técnica. Aqui você encontra desde análises de arquitetura e redes até projetos práticos desenvolvidos para resolver problemas reais ou explorar novas linguagens.</p>
+            
+            <div class="search-wrapper-simple">
+                <div class="search-input-group">
+                    <input type="text" id="searchInput" placeholder="O que procura? (Ex: Python, OSI)">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-tag active" data-filter="all">Todos</button>
+                <button class="filter-tag" data-filter="relatorio">Relatórios</button>
+                <button class="filter-tag" data-filter="artigo">Artigos</button>
+                <button class="filter-tag" data-filter="projeto">Projetos</button>
+            </div>
+        </header>
+
+        <div class="control-grid">
+            <a href="../index.html" class="bento-item back-btn-card">
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </a>
+
+            <section class="bento-item progress-dashboard">
+                <div class="progress-info-top">
+                    <span class="label-main">Jornada Acadêmica</span>
+                    <div class="counter-group">
+                        <div class="count-number">
+                            <span id="project-count">0</span> DOCS
+                        </div>
+                        <small>PUBLICADOS</small>
+                    </div>
+                </div>
+
+                <div class="progress-visual">
+                    <div class="progress-bar-container">
+                        <div class="progress-fill" id="progressBar"></div>
+                    </div>
+                    <div class="progress-years">
+                        <span>2026</span>
+                        <span id="time-percent">0%</span>
+                        <span>2028</span>
+                    </div>
+                </div>
+            </section>
+
+            <div id="theme-toggle" class="bento-item theme-switch-card">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+        </div>
+
+        <main class="research-list-grid">
+            
+        <article class="bento-item research-card" data-category="projeto">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#HTML5</span>
+                    <span>#CSS3</span>
+                    <span>#JS</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">13</span>
+                    <span class="month">FEV</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+            <h3 class="research-title">Portfólio Web Pessoal</h3>
+            <p class="research-desc">Interface responsiva desenvolvida como laboratório técnico para o curso de ADS. Focado em manipulação de DOM.</p>
+            <div class="card-footer">
+                <a href="https://github.com/murilo-guimaraes/website-portfolio" target="_blank" class="btn-main-link">
+                    <i class="fa-brands fa-github"></i> Código
+                </a>
+            </div>
+        </article>
+
+        <article class="bento-item research-card" data-category="projeto">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#Python</span>
+                    <span>#Pillow</span>
+                    <span>#Automação</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">11</span>
+                    <span class="month">MAR</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+            <h3 class="research-title">Conversor Pro</h3>
+            <p class="research-desc">Ferramenta para conversão em lote de arquivos multimídia otimizados e interface TKinter.</p>
+            <div class="card-footer">
+                <a href="https://github.com/murilo-guimaraes/portable-converter" target="_blank" class="btn-main-link">
+                    <i class="fa-brands fa-github"></i> Acessar
+                </a>
+            </div>
+        </article>
+
+        <article class="bento-item research-card" data-category="relatorio">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#LinguagemC</span>
+                    <span>#Big-O</span>
+                    <span>#Algoritmos</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">16</span>
+                    <span class="month">MAR</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Algoritmos de Busca</h3>
+            <p class="research-desc">Análise de complexidade assintótica entre busca linear e binária, com foco em performance e escalabilidade de dados.</p>
+
+            <div class="card-footer">
+                <a href="../Pesquisas/Relatórios/L. Programação_ Algoritmos de Busca.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Relatório
+                </a>
+
+                <a href="https://colab.research.google.com/drive/1FKh69bNB7llEF240anrbwYdW2qWqrmlp?usp=sharing" target="_blank" class="btn-colab">
+                    <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" width="18" height="18" alt="Colab Icon" style="margin-right: -4px;"> Colaboratory
+                </a>
+            </div>
+        </article>
+
+        <article class="bento-item research-card" data-category="relatorio">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#Python</span>
+                    <span>#Ordenação</span>
+                    <span>#Big-O</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">30</span>
+                    <span class="month">MAR</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Algoritmos de Ordenação</h3>
+            <p class="research-desc">Estudo sobre eficiência computacional comparando métodos simples (Bubble, Selection) e avançados (Quick, Merge Sort) sob a ótica da estratégia Dividir para Conquistar.</p>
+
+            <div class="card-footer">
+                <a href="../Pesquisas/Relatórios/L. Programação_ Algoritmos de Ordenação em Python.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Relatório
+                </a>
+
+                <a href="https://colab.research.google.com/drive/1M7mWehWw-Dsc8xcQ4PEp_KMMYvW4nhJa?usp=sharing" target="_blank" class="btn-colab">
+                    <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" width="18" height="18" alt="Colab Icon" style="margin-right: -4px;"> Colaboratory
+                </a>
+            </div>
+        </article>
+
+        <article class="bento-item research-card" data-category="relatorio">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#Redes</span>
+                    <span>#TCP-IP</span>
+                    <span>#HTTP</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">19</span>
+                    <span class="month">MAR</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Arquitetura TCP/IP</h3>
+            <p class="research-desc">Análise detalhada das quatro camadas do modelo TCP/IP, focando em encapsulamento de dados e diagnósticos de conectividade via protocolos de transporte.</p>
+
+            <div class="card-footer">
+                <a href="../Pesquisas/Relatórios/R. Computadores_ Comunicação em Rede _ TCP_IP.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Relatório
+                </a>
+
+                <a href="https://colab.research.google.com/drive/1vPJwCweanX4LnlFoc4bwoTFmqkatQVP0?usp=sharing" target="_blank" class="btn-colab">
+                    <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" width="18" height="18" alt="Colab Icon" style="margin-right: -4px;"> Colaboratory
+                </a>
+            </div>
+        </article>
+        
+        <article class="bento-item research-card" data-category="relatorio">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#Redes</span>
+                    <span>#Infraestrutura</span>
+                    <span>#Full-Duplex</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">12</span>
+                    <span class="month">FEV</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Fundamentos de Redes</h3>
+            <p class="research-desc">Estudo sobre classificação geográfica (LAN/WAN), natureza dos sinais e análise prática de modos de transmissão para otimização de infraestruturas modernas.</p>
+
+            <div class="card-footer">
+                <a href="../Pesquisas/Relatórios/R. Computadores_ Fundamentos e Classificação.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Relatório
+                </a>
+
+                <a href="https://colab.research.google.com/drive/1urTgle595I9HtRYX9baq945Oqd7wFuai?usp=sharing" target="_blank" class="btn-colab">
+                    <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" width="18" height="18" alt="Colab Icon" style="margin-right: -4px;"> Colaboratory
+                </a>
+            </div>
+        </article>
+
+        <article class="bento-item research-card" data-category="relatorio">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#ProtocoloIP</span>
+                    <span>#Sub-redes</span>
+                    <span>#IPv4</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">16</span>
+                    <span class="month">ABR</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Endereçamento e Roteamento</h3>
+            <p class="research-desc">Estudo sobre a Camada de Rede, cobrindo a estrutura de 32 bits do IPv4, segmentação de sub-redes e análise de saltos (hops) via ferramentas de diagnóstico.</p>
+
+            <div class="card-footer">
+                <a href="../Pesquisas/Relatórios/R. Computadores_ Roteamento e Endereçamento IP.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Relatório
+                </a>
+
+                <a href="https://colab.research.google.com/drive/1FLCNp72BZ7UNx_sM_d18ZxT3g8W-uFJM?usp=sharing" target="_blank" class="btn-colab">
+                    <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" width="18" height="18" alt="Colab Icon" style="margin-right: -4px;"> Colaboratory
+                </a>
+            </div>
+        </article>
+
+        <article class="bento-item research-card" data-category="relatorio">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#SistemasOperacionais</span>
+                    <span>#CPU</span>
+                    <span>#Multitarefa</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">24</span>
+                    <span class="month">MAR</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Escalonamento de CPU</h3>
+            <p class="research-desc">Análise de algoritmos de escalonamento (FIFO e Round Robin), focando no impacto do quantum de tempo para a eficiência da multitarefa no Kernel.</p>
+
+            <div class="card-footer">
+                <a href="../Pesquisas/Relatórios/S. Operacionais_ Algoritmos Escalonamento de CPU.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Relatório
+                </a>
+
+                <a href="https://colab.research.google.com/drive/1zHaRzgqKRZ4ha7OWQ9ZqOX8DXlJLIeZa?usp=sharing" target="_blank" class="btn-colab">
+                    <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" width="18" height="18" alt="Colab Icon" style="margin-right: -4px;"> Colaboratory
+                </a>
+            </div>
+        </article>
+
+        <article class="bento-item research-card" data-category="relatorio">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#Kernel</span>
+                    <span>#SystemCalls</span>
+                    <span>#Hardware</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">24</span>
+                    <span class="month">FEV</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Arquitetura do SO</h3>
+            <p class="research-desc">Análise sobre a interface do Kernel, diferenciando os modos Usuário e Supervisor, e como as chamadas de sistema (System Calls) garantem a segurança do hardware.</p>
+
+            <div class="card-footer">
+                <a href="../Pesquisas/Relatórios/S. Operacionais_ Kernel e Arquiteturas.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Relatório
+                </a>
+
+                <a href="https://colab.research.google.com/drive/1WPaHmSskil5iYvWLA2uizSxyzqDQJiqn?usp=sharing" target="_blank" class="btn-colab">
+                    <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" width="18" height="18" alt="Colab Icon" style="margin-right: -4px;"> Colaboratory
+                </a>
+            </div>
+        </article>
+
+        <article class="bento-item research-card" data-category="relatorio">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#Processos</span>
+                    <span>#Threads</span>
+                    <span>#Concorrência</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">17</span>
+                    <span class="month">MAR</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Processos e Threads</h3>
+            <p class="research-desc">Estudo sobre unidades de execução, diferenciando o isolamento de memória dos processos da agilidade de compartilhamento das threads para sistemas multitarefa.</p>
+
+            <div class="card-footer">
+                <a href="../Pesquisas/Relatórios/S. Operacionais_ Processos e Threads.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Relatório
+                </a>
+
+                <a href="https://colab.research.google.com/drive/1C_9Hff0oyKAOD3HpSaNrnHaJuMHRw2MA?usp=sharing" target="_blank" class="btn-colab">
+                    <img src="https://cdn.simpleicons.org/googlecolab/F9AB00" width="18" height="18" alt="Colab Icon" style="margin-right: -4px;"> Colaboratory
+                </a>
+            </div>
+        </article>
+
+        <article class="bento-item research-card" data-category="artigo">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#Python</span>
+                    <span>#Modularização</span>
+                    <span>#Zenodo</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">17</span>
+                    <span class="month">ABR</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Modularização e Bibliotecas</h3>
+            <p class="research-desc">Estudo sobre a organização estrutural de código em Python, explorando a segregação de responsabilidades e o uso de bibliotecas do ecossistema PyPI.</p>
+
+            <div class="card-footer">
+                <a href="../Pesquisas/Artigos/2LProgramação.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Artigo
+                </a>
+
+                <a href="https://zenodo.org/records/10989332" target="_blank" class="btn-zenodo">
+                    <i class="fa-solid fa-magnifying-glass"></i> Zenodo
+                </a>
+            </div>
+        </article>
+
+        <article class="bento-item research-card" data-category="artigo">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#TCP-UDP</span>
+                    <span>#Protocolos</span>
+                    <span>#Zenodo</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">23</span>
+                    <span class="month">ABR</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Confiabilidade e Fluxo</h3>
+            <p class="research-desc">Análise comparativa entre os protocolos TCP e UDP, explorando mecanismos de handshake, multiplexação de portas e o equilíbrio entre latência e integridade de dados.</p>
+
+            <div class="card-footer">
+                <a href="../Pesquisas/Artigos/2RComputadores.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Artigo
+                </a>
+
+                <a href="https://zenodo.org/records/11050720" target="_blank" class="btn-zenodo">
+                    <i class="fa-solid fa-magnifying-glass"></i> Zenodo
+                </a>
+            </div>
+        </article>
+        
+        <article class="bento-item research-card" data-category="artigo">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#POO</span>
+                    <span>#Python</span>
+                    <span>#Zenodo</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">13</span>
+                    <span class="month">ABR</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Classes e Métodos em Python</h3>
+            <p class="research-desc">Exploração do paradigma de Orientação a Objetos, focando na criação de moldes reutilizáveis, encapsulamento de lógica e gestão de estados através de instâncias.</p>
+
+            <div class="card-footer">
+                <a href="../Pesquisas/Artigos/LProgramação.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Artigo
+                </a>
+
+                <a href="https://zenodo.org/records/10967520" target="_blank" class="btn-zenodo">
+                    <i class="fa-solid fa-magnifying-glass"></i> Zenodo
+                </a>
+            </div>
+        </article>
+
+        <article class="bento-item research-card" data-category="artigo">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#IPv4</span>
+                    <span>#Sub-redes</span>
+                    <span>#Zenodo</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">16</span>
+                    <span class="month">ABR</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Arquitetura de Sub-redes IPv4</h3>
+            <p class="research-desc">Análise técnica sobre o endereçamento de 32 bits, explorando a segmentação de sub-redes (subnetting) para otimização de tráfego e reforço da segurança perimetral.</p>
+
+            <div class="card-footer">
+                <a href="../Pesquisas/Artigos/RComputadores.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Artigo
+                </a>
+
+                <a href="https://zenodo.org/records/11050720" target="_blank" class="btn-zenodo">
+                    <i class="fa-solid fa-magnifying-glass"></i> Zenodo
+                </a>
+            </div>
+        </article>
+
+        <article class="bento-item research-card" data-category="artigo">
+            <div class="card-header">
+                <div class="research-tags">
+                    <span>#File-Systems</span>
+                    <span>#Abstração</span>
+                    <span>#Zenodo</span>
+                </div>
+                <div class="research-date">
+                    <span class="day">14</span>
+                    <span class="month">ABR</span>
+                    <span class="year">2026</span>
+                </div>
+            </div>
+
+            <h3 class="research-title">Sistemas de Arquivos</h3>
+            <p class="research-desc">Estudo sobre a abstração do hardware para o usuário, explorando operações de ciclo de vida de arquivos, atributos de segurança e métodos de acesso direto em disco.</p>
+
+            <div class="card-footer">
+                <a href="../../Pesquisas/Artigos/SOperacionais.pdf" class="btn-main-link">
+                    <i class="fa-solid fa-file-lines"></i> Ler Artigo
+                </a>
+
+                <a href="https://zenodo.org/records/10974911" target="_blank" class="btn-zenodo">
+                    <i class="fa-solid fa-magnifying-glass"></i> Zenodo
+                </a>
+            </div>
+        </article>
+    </section>
+</main>
+
+    <script src="script.js"></script>
+    <script src="projetos.js"></script>
+
+    <footer class="minimal-footer">
+        <p>&copy; 2026 Murilo • Build v2.0</p>
+    </footer>
+    
+</body>
+</html>
