@@ -1,7 +1,11 @@
 # Portfólio Acadêmico & Tech Hub
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=murilo-guimaraes&show_icons=true&theme=transparent&title_color=ff6b00&icon_color=ff6b00&text_color=ededed&hide_border=true" width="600" alt="GitHub Stats" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=murilo-guimaraes&show_icons=true&theme=transparent&title_color=ff6b00&icon_color=ff6b00&text_color=ededed&hide_border=true">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=murilo-guimaraes&show_icons=true&theme=dark&title_color=ff6b00&icon_color=ff6b00&text_color=ededed&hide_border=false">
+    <img src="https://github-readme-stats.vercel.app/api?username=murilo-guimaraes&show_icons=true&theme=dark&title_color=ff6b00&icon_color=ff6b00&text_color=ededed" width="600" />
+  </picture>
 </div>
 
 <br />
