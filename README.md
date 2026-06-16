@@ -37,7 +37,7 @@ Desenvolvido para unir estética e performance, o ecossistema atua como um hub c
 
 O ecossistema está publicado e opera em uma arquitetura de **Bento Grid** modular, oferecendo uma experiência fluida com suporte nativo a **Adaptive Themes**.
 
-**Acesse o projeto:** [murilo-guimaraes.github.io/](https://murilo-guimaraes.github.io/)
+**Acesse o projeto:** [murilo-guimaraes.github.io](https://murilo-guimaraes.github.io)
 
 ---
 
